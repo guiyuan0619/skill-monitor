@@ -11,7 +11,7 @@ It is designed for people who actively tune their Codex skill setup and want a l
 - Uses a fixed bilingual output format
 - Adds evidence-based toggle suggestions
 - Distinguishes between facts and heuristic recommendations
-- Falls back to "insufficient evidence" instead of over-claiming
+- Falls back to `Insufficient evidence` instead of over-claiming
 
 ## Recommendation Model
 
@@ -53,7 +53,20 @@ Skill Suggestions: Insufficient evidence
 
 ## Installation
 
-Copy the skill folder into your local Codex skills directory:
+Install `skill-monitor` with `$skill-installer` using the GitHub repository URL:
+
+```text
+https://github.com/<your-username>/skill-monitor
+```
+
+Example install prompt:
+
+```text
+Use $skill-installer to install the skill from:
+https://github.com/<your-username>/skill-monitor
+```
+
+After installation, the skill should appear under your local Codex skills directory:
 
 ```text
 ~/.codex/skills/skill-monitor
@@ -65,15 +78,15 @@ On Windows, this is typically:
 C:\Users\<your-user>\.codex\skills\skill-monitor
 ```
 
-The skill should contain:
+Expected structure:
 
 ```text
 skill-monitor/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-└── references/
-    └── reporting-format.md
+|-- SKILL.md
+|-- agents/
+|   `-- openai.yaml
+`-- references/
+    `-- reporting-format.md
 ```
 
 ## Usage
@@ -84,6 +97,15 @@ Example prompt:
 
 ```text
 Use $skill-monitor to answer my question and append a skill report with recommendations.
+```
+
+More explicit example:
+
+```text
+Use $skill-monitor to answer my question and append:
+1. a bilingual report of triggered skills
+2. the reason each skill was triggered
+3. evidence-based suggestions on which skills to keep, observe, use on demand, or consider disabling
 ```
 
 ## Design Principles

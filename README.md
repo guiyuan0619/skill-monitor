@@ -56,14 +56,14 @@ Skill Suggestions: Insufficient evidence
 Install `skill-monitor` with `$skill-installer` using the GitHub repository URL:
 
 ```text
-https://github.com/<your-username>/skill-monitor
+https://github.com/guiyuan0619/skill-monitor
 ```
 
 Example install prompt:
 
 ```text
 Use $skill-installer to install the skill from:
-https://github.com/<your-username>/skill-monitor
+https://github.com/guiyuan0619/skill-monitor
 ```
 
 After installation, the skill should appear under your local Codex skills directory:

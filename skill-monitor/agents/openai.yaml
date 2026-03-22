@@ -1,0 +1,7 @@
+interface:
+  display_name: "Skill Monitor"
+  short_description: "监控触发技能，并给出基于证据的双语开关建议。"
+  default_prompt: "Use $skill-monitor to append a bilingual skill monitor and evidence-based toggle suggestions for this reply."
+
+policy:
+  allow_implicit_invocation: false
